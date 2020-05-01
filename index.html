@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+      integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="info">Select a Yeast Type for conversion</div>
+          <label for="yeastFromType">From:</label>
+          <select name="yeastFromType" id="yeastFromSelector">
+            <option value="0">Select</option>
+            <option value="instant">Instant Yeast</option>
+            <option value="dry">Dry Yeast</option>
+            <option value="fresh">Fresh Yeast</option>
+          </select>
+          <label for="yeastToType">To:</label>
+          <select name="yeastToType" id="yeastToSelector">
+            <option value="0">Select</option>
+            <option value="instant">Instant Yeast</option>
+            <option value="dry">Dry Yeast</option>
+            <option value="fresh">Fresh Yeast</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="info">Select a Unit Type for conversion</div>
+          <label for="unitFromType">From:</label>
+          <select name="unitFromType" id="unitFromSelector">
+            <option value="0">Select</option>
+            <option value="tsp">Teaspoon</option>
+            <option value="tbsp">Tablespoon</option>
+            <option value="grams">Grams</option>
+          </select>
+          <label for="unitToType">To:</label>
+          <select name="unitToType" id="unitToSelector">
+            <option value="0">Select</option>
+            <option value="tsp">Teaspoon</option>
+            <option value="tbsp">Tablespoon</option>
+            <option value="grams">Grams</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="info">How much stuff</div>
+          <label for="volumeConverterInput">Amount:</label>
+          <input
+            type="text"
+            name="volumeConverterInput"
+            id="volumeConverterInput"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary" id="btnConvert">Convert</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="jumbotron">
+            <h2 id="result"></h2>
+            <h2 id="yeast"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
